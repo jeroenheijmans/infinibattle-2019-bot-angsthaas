@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using StarterBot.Models;
+using Angsthaas.Models;
 
-namespace StarterBot {
+namespace Angsthaas {
     internal static class Bot
     {
         public static void Start(Func<GameState, Move[]> strategy)

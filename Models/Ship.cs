@@ -1,4 +1,4 @@
-﻿namespace StarterBot.Models {
+﻿namespace Angsthaas.Models {
     internal class Ship {
         public float X { get; set; }
         public float Y { get; set; }

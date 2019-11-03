@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace StarterBot.Models {
+namespace Angsthaas.Models {
     internal class Planet {
         public int Id { get; set; }
         public float X { get; set; }

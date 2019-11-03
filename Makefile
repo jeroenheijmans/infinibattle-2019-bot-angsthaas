@@ -6,7 +6,7 @@ APIKEY := <bot_api_key_here>
 all: help
 
 help:
-	@echo "Infinibattle Starterbot"
+	@echo "Infinibattle Angsthaas"
 	@echo ""
 	@echo "make build - build the bot"
 	@echo "make upload - upload the bot that has been build"

@@ -1,4 +1,4 @@
-﻿namespace StarterBot.Models {
+﻿namespace Angsthaas.Models {
     internal class Move {
         public Move(float power, int source, int target)
         {

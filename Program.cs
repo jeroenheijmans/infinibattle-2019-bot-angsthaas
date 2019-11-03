@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Threading;
-using StarterBot.Models;
+using Angsthaas.Models;
 
-namespace StarterBot {
+namespace Angsthaas {
     internal class Program {
         private static void Main() {
             // Set application culture.

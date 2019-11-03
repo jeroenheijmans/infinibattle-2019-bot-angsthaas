@@ -1,4 +1,4 @@
-﻿namespace StarterBot.Models {
+﻿namespace Angsthaas.Models {
     internal class Settings {
         public int Seed { get; set; }
 
