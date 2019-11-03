@@ -1,5 +1,5 @@
 # Globals.
-$APIKEY = "YOUR_API_KEY"
+$APIKEY = "SECRET"
 $BASEURL = "https://infinibattle.infi.nl"
 $CONFIGURATION = "Release"
 
@@ -60,4 +60,4 @@ $zipPath = "$($PSScriptRoot)\publish.zip"
 
 Create-Zip $buildDirectory $zipPath
 
-Write-Output(Upload $BASEURL $APIKEY $zipPath)
+Upload $BASEURL $APIKEY $zipPath)

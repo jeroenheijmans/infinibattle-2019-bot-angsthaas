@@ -24,20 +24,25 @@ namespace Angsthaas
 
             var myPlanets = gamestate.Planets.Where(p =>
                 p.Owner == gamestate.Settings.PlayerId &&
-                p.Health >= new Random().Next(2, 100)
+                p.Health >= 0.5 * p.Radius
             );
 
             foreach (var planet in myPlanets)
             {
-                var target = planet.Neighbors
+                var targets = planet.Neighbors
                     .Select(n => gamestate.Planets[n])
                     .Where(p => p.Owner != gamestate.Settings.PlayerId)
-                    .OrderBy(p => p.DistanceTo(planet))
-                    .FirstOrDefault();
+                    .OrderByDescending(p =>
+                        gamestate.Planets
+                            .Where(e => e.Owner.HasValue && e.Owner != gamestate.Settings.PlayerId)
+                            .Select(e => p.DistanceTo(e))
+                            .Max()
+                    )
+                    .Take(2);
 
-                if (target != null)
+                foreach (var target in targets)
                 {
-                    var power = gamestate.Planets[planet.Id].Health / 2;
+                    var power = gamestate.Planets[planet.Id].Health * 4 / 9;
                     moves.Add(new Move(power, planet.Id, target.Id));
                 }
             }
