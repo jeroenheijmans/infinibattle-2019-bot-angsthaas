@@ -1,5 +1,7 @@
-﻿namespace Angsthaas.Models {
-    internal class Ship {
+﻿namespace Angsthaas.Models
+{
+    internal class Ship
+    {
         public float X { get; set; }
         public float Y { get; set; }
         public int TargetId { get; set; }

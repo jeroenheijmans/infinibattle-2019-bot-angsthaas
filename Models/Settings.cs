@@ -1,5 +1,7 @@
-﻿namespace Angsthaas.Models {
-    internal class Settings {
+﻿namespace Angsthaas.Models
+{
+    internal class Settings
+    {
         public int Seed { get; set; }
 
         public int Players { get; set; }

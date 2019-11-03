@@ -1,8 +1,11 @@
 ﻿using System.Collections.Generic;
 
-namespace Angsthaas.Models {
-    internal class GameState {
-        public GameState(Settings settings) {
+namespace Angsthaas.Models
+{
+    internal class GameState
+    {
+        public GameState(Settings settings)
+        {
             Settings = settings;
         }
 

@@ -1,7 +1,9 @@
 ﻿using System;
 
-namespace Angsthaas.Models {
-    internal class Planet {
+namespace Angsthaas.Models
+{
+    internal class Planet
+    {
         public int Id { get; set; }
         public float X { get; set; }
         public float Y { get; set; }
@@ -12,7 +14,8 @@ namespace Angsthaas.Models {
 
         public int[] Neighbors { get; set; }
 
-        public float DistanceTo(Planet other) {
+        public float DistanceTo(Planet other)
+        {
             var dx = other.X - X;
             var dy = other.Y - Y;
             return MathF.Sqrt(dx * dx + dy * dy);

@@ -5,9 +5,12 @@ using System.Linq;
 using System.Threading;
 using Angsthaas.Models;
 
-namespace Angsthaas {
-    internal class Program {
-        private static void Main() {
+namespace Angsthaas
+{
+    internal class Program
+    {
+        private static void Main()
+        {
             // Set application culture.
             SetApplicationCulture();
 
